@@ -1,7 +1,6 @@
 API:
 - https://www.omdbapi.com/
 - APIKEY: 925aef6a
-- https://www.omdbapi.com/?s=Avengers&apikey=925aef6a
 
 Requisitos:
 - Nescesita mostrar un input de busqueda +
