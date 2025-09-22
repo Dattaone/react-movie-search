@@ -40,8 +40,12 @@ function App() {
   const { movies, fetchMovies, loading } = useMoviesResult(search, sort)
 
   const debouncedFetchMovies = useCallback(
-    debounce(( search: string) => fetchMovies(search), 500, true)
-  ,[fetchMovies])
+    (search: string) => {
+      debounce(() => fetchMovies(search), 500, true)()
+    },
+    [fetchMovies]
+  )
+
   
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>)=>{
     event.preventDefault()

@@ -1,5 +1,5 @@
 import { useCallback, useState, useRef, useMemo } from 'react'
-import { getMovies } from '@services/movies'
+import { getMovies } from '../services/movies'
 import { Movie } from '../types/api'
 
 export function useMoviesResult(search: string, sort: boolean){
